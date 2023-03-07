@@ -1,6 +1,6 @@
 #include <iostream>
 
-std::string JobSelection(bool selectionValid, int jobSelection, std::string username, std::string jobType, std::string job)
+std::string JobSelection(bool selectionValid, int jobSelection, std::string username, std::string jobType)
 {
 	std::cout << "\n== You Choose! ==\n\nYou have three different options for jobs! They are as follows:\n\n==========\n\n#1: Blacksmith\n\n#2: Farmer\n\n#3: Warrior\n\n==========\n\nPlease make your job selection using the number of the job you want!: ";
 	std::cin >> jobSelection;
@@ -32,9 +32,8 @@ std::string JobSelection(bool selectionValid, int jobSelection, std::string user
 	}
 	std::cout << "\n========\nYou have selected " << jobType << "!\n========\n\n" << username << "'s most recent job is being a " << jobType << "!" << std::endl;
 
-	job = jobType;
 
-	return job;
+	return jobType;
 }
 
 

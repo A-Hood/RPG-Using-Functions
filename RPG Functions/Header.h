@@ -1,6 +1,6 @@
 #pragma once
 
-std::string JobSelection(bool selectionValid, int jobSelection, std::string username, std::string jobType, std::string job);
+std::string JobSelection(bool selectionValid, int jobSelection, std::string username, std::string jobType);
 
 std::string ClothesSelection(std::string jobType, int clothesSelection, bool selectionValid, std::string armourType, std::string username);
 
